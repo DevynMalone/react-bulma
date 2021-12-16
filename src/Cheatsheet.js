@@ -2,6 +2,35 @@ import React, { Component } from 'react';
 import './Cheatsheet.css';
 import './Prism.css';
 
+const toolList = [
+    {
+        name:'Tool 1',
+        language: 'JS'
+    },{
+        name:'Tool 2',
+        language: 'CSS'
+    },{
+        name:'Tool 3',
+        language: 'HTML'
+    },{
+        name:'Tool 4',
+        language: 'JS'
+    },{
+        name:'Tool 5',
+        language: 'CSS'
+    },
+]
+
+const displayToolList = toolList.map((tool,index)=>{
+    return(
+        <ul class="menu-list" key={index}>
+                <li><span class="tag is-white is-medium">{tool.name}</span></li>
+                
+                
+              </ul>
+    );
+});
+
 class Cheatsheet extends Component {
     render () {
         return (
@@ -45,7 +74,7 @@ class Cheatsheet extends Component {
                 More to read...
               </p>
               <ul class="menu-list">
-                <li><span class="tag is-white is-medium">Lorem</span></li>
+                <li><span class="tag is-white is-medium">{displayToolList}</span></li>
                 <li><span class="tag is-white is-medium">Ipsum</span></li>
                 <li><span class="tag is-white is-medium">Dolor</span></li>
                 <li><span class="tag is-white is-medium">Animi</span></li>
