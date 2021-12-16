@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import './App.css';
 
 //Components
-import Racing from './Racing'; // imports Racing.js 
-import Basketball from './Basketball'; // imports Basketball.js 
-import Football from './Football'; // imports Football.js 
-import Baseball from './Baseball'; // imports Baseball.js
-import Nhl from './Nhl'; // imports Nhl.js
-import Cover from './Cover'; // imports Cover.js
-import Login from './Login';
-
+// import Racing from './Racing'; // imports Racing.js 
+// import Basketball from './Basketball'; // imports Basketball.js 
+// import Football from './Football'; // imports Football.js 
+// import Baseball from './Baseball'; // imports Baseball.js
+// import Nhl from './Nhl'; // imports Nhl.js
+// import Cover from './Cover'; // imports Cover.js
+// import Login from './Login';
+import Forum from './Forum';
 
 
 
@@ -27,7 +27,8 @@ class App extends Component {
         <Baseball />
         <Nhl /> */}
         {/* <Cover /> */}
-        <Login />
+        {/* <Login /> */}
+        <Forum />
       
       </div>
     )
