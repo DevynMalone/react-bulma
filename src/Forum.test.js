@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Forum from './Forum'
 
-//======Checks to see if Dashboard tag is showing=====\\
+//======Checks to see if Dashboard tag is showing using text search=====\\
 test('renders dashboard tag', () => {
   render(<Forum />);
   const spanElement = screen.getByText(/Dashboard/i);
@@ -37,8 +37,8 @@ test('renders Balance tag', ()=>{
   const spanElement = screen.getByText(/Balance/i);
   expect(spanElement).toBeInTheDocument();
 })
-
-test('renders', ()=>{
+//======Checks to see if Dashboard tag is showing using title search=====\\
+test('renders question tag', ()=>{
   render(<Forum />);
   const spanElement = screen.getByTitle(/question/i);
   expect(spanElement).toBeInTheDocument();

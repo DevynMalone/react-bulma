@@ -10,6 +10,7 @@ import './App.css';
 // import Cover from './Cover'; // imports Cover.js
 // import Login from './Login';
 import Forum from './Forum';
+import Cheatsheet from './Cheatsheet';
 
 
 
@@ -28,7 +29,8 @@ class App extends Component {
         <Nhl /> */}
         {/* <Cover /> */}
         {/* <Login /> */}
-        <Forum />
+        {/* <Forum /> */}
+        <Cheatsheet />
       
       </div>
     )
