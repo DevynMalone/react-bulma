@@ -19,13 +19,13 @@ const headerList = [
 
 const displayHeaderList = headerList.map((header,index)=>{
     return (
-        <div class="hero-body" key={index} >
-            <div class="container">
-                <h1 class="title">
+        <div className="hero-body" key={index} >
+            <div className="container">
+                <h1 className="title">
                     {header.title}
                 </h1>
-                <h2 class="subtitle">
-                    {header.subtitle}
+                <h2 className="subtitle">
+                    {header.subTitle}
                 </h2>
             </div>
         </div>
@@ -37,14 +37,14 @@ class Aside extends Component {
     render () {
         return (
             <div>
-                <section class="hero is-info">
-        <div class="hero-body">
-            <div class="container">
-            {displayHeaderList}
-                <h1 class="title">
+                <section className="hero is-info">
+        <div className="hero-body">
+            <div className="container">
+            
+                <h1 className="title">
                     Primary title
                 </h1>
-                <h2 class="subtitle">
+                <h2 className="subtitle">
                     Primary subtitle
                 </h2>
 
@@ -52,102 +52,104 @@ class Aside extends Component {
             
         </div>
     </section>
-    <div class="columns">
+    <div className="columns">
         {/* <!-- Aside nav drawer --> */}
-        <aside class="column is-3 is-hidden-mobile">
-            <div class="panel">
-                <p class="panel-heading has-text-centered">Main Heading Goes Here</p>
-                <a class="panel-block">
-                    <span class="panel-icon">
-                        <i class="fa fa-home"></i>
+        <aside className="column is-3 is-hidden-mobile">
+            <div className="panel">
+                <p className="panel-heading has-text-centered">Main Heading Goes Here</p>
+                <a className="panel-block">
+                    <span className="panel-icon">
+                        <i className="fa fa-home"></i>
                     </span>
-                    <span class="name">Dashboard</span>
+                    <span className="name">Dashboard</span>
                 </a>
-                <a class="panel-block">
-                    <span class="panel-icon">
-                        <i class="fa fa-map-marker"></i>
+                <a className="panel-block">
+                    <span className="panel-icon">
+                        <i className="fa fa-map-marker"></i>
                     </span>
-                    <span class="name">Activity</span>
+                    <span className="name">Activity</span>
                 </a>
-                <a class="panel-block">
-                    <span class="panel-icon">
-                        <i class="fa fa-th-list"></i>
+                <a className="panel-block">
+                    <span className="panel-icon">
+                        <i className="fa fa-th-list"></i>
                     </span>
-                    <span class="name">Timeline</span>
+                    <span className="name">Timeline</span>
                 </a>
-                <a class="panel-block">
-                    <span class="panel-icon">
-                        <i class="fa fa-folder-o"></i>
+                <a className="panel-block">
+                    <span className="panel-icon">
+                        <i className="fa fa-folder-o"></i>
                     </span>
-                    <span class="name">Folders</span>
+                    <span className="name">Folders</span>
                 </a>
                 <hr/>
-                <a class="panel-block">
-                    <span class="panel-icon">
-                        <i class="fa fa-comment-o"></i>
+                <a className="panel-block">
+                    <span className="panel-icon">
+                        <i className="fa fa-comment-o"></i>
                     </span>
-                    <span class="name">Comments</span>
+                    <span className="name">Comments</span>
                 </a>
-                <a class="panel-block">
-                    <span class="panel-icon">
-                        <i class="fa fa-envelope-o"></i>
+                <a className="panel-block">
+                    <span className="panel-icon">
+                        <i className="fa fa-envelope-o"></i>
                     </span>
-                    <span class="name">Mail</span>
+                    <span className="name">Mail</span>
                 </a>
-                <a class="panel-block">
-                    <span class="panel-icon">
-                        <i class="fa fa-rss"></i>
+                <a className="panel-block">
+                    <span className="panel-icon">
+                        <i className="fa fa-rss"></i>
                     </span>
-                    <span class="name">RSS Feed</span>
+                    <span className="name">RSS Feed</span>
                 </a>
-                <a class="panel-block">
-                    <span class="panel-icon">
-                        <i class="fa fa-database"></i>
+                <a className="panel-block">
+                    <span className="panel-icon">
+                        <i className="fa fa-database"></i>
                     </span>
-                    <span class="name">Data</span>
+                    <span className="name">Data</span>
                 </a>
             </div>
         </aside>
-        <section class="column">
-            <div class="tile is-ancestor">
-                <div class="tile is-vertical is-8">
-                    <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                            <article class="tile is-child notification is-primary">
-                                <p class="title">Vertical...</p>
-                                <p class="subtitle">Top tile</p>
+        <section className="column">
+            <div className="tile is-ancestor">
+                <div className="tile is-vertical is-8">
+                    <div className="tile">
+                        <div className="tile is-parent is-vertical">
+                            <article className="tile is-child notification is-primary">
+                                <p className="title">Vertical...</p>
+                                <p className="subtitle">Top tile</p>
                             </article>
-                            <article class="tile is-child notification is-warning">
-                                <p class="title">...tiles</p>
-                                <p class="subtitle">Bottom tile</p>
+                            <article className="tile is-child notification is-warning">
+                                <p className="title">...tiles</p>
+                                <p className="subtitle">Bottom tile</p>
                             </article>
                         </div>
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification is-info">
-                                <p class="title">Middle tile</p>
-                                <p class="subtitle">With an image</p>
-                                <figure class="image is-4by3">
+                        <div className="tile is-parent">
+                            <article className="tile is-child notification is-info">
+                                <p className="title">Middle tile</p>
+                                <p className="subtitle">With an image</p>
+                                <figure className="image is-4by3">
                                     <img src="https://bulma.io/images/placeholders/640x480.png"/>
                                 </figure>
                             </article>
                         </div>
                     </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification is-danger">
-                            <p class="title">Wide tile</p>
-                            <p class="subtitle">Aligned with the right tile</p>
-                            <div class="content">
+                    <div className="tile is-parent">
+                        <article className="tile is-child notification is-danger">
+                            <p className="title">Wide tile</p>
+                            <p className="subtitle">Aligned with the right tile</p>
+                            <div className="content">
                                 {/* <!-- Content --> */}
                             </div>
                         </article>
                     </div>
                 </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-success">
-                        <div class="content">
-                            <p class="title">Tall tile</p>
-                            <p class="subtitle">With even more content</p>
-                            <div class="content">
+                <div className="tile is-parent">
+                    <article className="tile is-child notification is-success">
+                        <div className="content">
+                        {displayHeaderList}
+                            <p className="title">Tall tile</p>
+                            <p className="subtitle">Under Title</p>
+                            
+                            <div className="content">
                                 {/* <!-- Content --> */}
                             </div>
                         </div>
@@ -157,9 +159,9 @@ class Aside extends Component {
         </section>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="content has-text-centered">
+    <footer className="footer">
+        <div className="container">
+            <div className="content has-text-centered">
                 <p>
                     <strong>Bulma</strong> by
                     <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
