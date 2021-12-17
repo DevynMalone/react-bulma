@@ -12,6 +12,7 @@ import './App.css';
 import Forum from './Forum';
 import Cheatsheet from './Cheatsheet';
 import InstaAlbum from './InstaAlbum';
+import Aside from './Aside';
 
 
 
@@ -32,7 +33,8 @@ class App extends Component {
         {/* <Login /> */}
         {/* <Forum /> */}
         {/* <Cheatsheet /> */}
-      <InstaAlbum />
+      {/* <InstaAlbum /> */}
+      <Aside />
       </div>
     )
   }

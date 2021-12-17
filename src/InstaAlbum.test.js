@@ -25,3 +25,10 @@ test('renders license tag', ()=>{
     const spanElement = screen.getByTitle(/search/i);
     expect(spanElement).toBeInTheDocument();
   })
+
+  test('renders random link tag', () => {
+    render(<InstaAlbum/>);
+    const spanElement = screen.getByText(/CC BY NC SA 4.0/i);
+    expect(spanElement).toBeInTheDocument();
+  });
+  
