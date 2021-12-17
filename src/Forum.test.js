@@ -42,4 +42,4 @@ test('renders question tag', ()=>{
   render(<Forum />);
   const spanElement = screen.getByTitle(/question/i);
   expect(spanElement).toBeInTheDocument();
-})
+}) 

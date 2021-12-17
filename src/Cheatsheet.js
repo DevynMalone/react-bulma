@@ -23,8 +23,8 @@ const toolList = [
 
 const displayToolList = toolList.map((tool,index)=>{
     return(
-        <ul class="menu-list" key={index}>
-                <li><span class="tag is-white is-medium">{tool.name}</span></li>
+        <ul className="menu-list" key={index}>
+                <li><span className="tag is-white is-medium">{tool.name}</span></li>
                 
                 
               </ul>
@@ -35,20 +35,20 @@ class Cheatsheet extends Component {
     render () {
         return (
             <div>
-                 <section class="hero is-primary">
-      <div class="hero-body">
-        <div class="columns">
-          <div class="column is-12">
-            <div class="container content">
-              <i class="is-large fab fa-discord"></i>
-              <i class="is-large fas fa-code"></i>
-              <h1 class="title">Code <em>All</em> The Things</h1>
-              <h3 class="subtitle">
+                 <section className="hero is-primary">
+      <div className="hero-body">
+        <div className="columns">
+          <div className="column is-12">
+            <div className="container content">
+              <i className="is-large fab fa-discord"></i>
+              <i className="is-large fas fa-code"></i>
+              <h1 className="title">Code <em>All</em> The Things</h1>
+              <h3 className="subtitle">
               Collection of code goodies for next-level dev
               </h3>
-              <a href="https://github.com/BulmaTemplates/bulma-templates" target="_blank" class="button is-primary is-large">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
+              <a href="https://github.com/BulmaTemplates/bulma-templates" target="_blank" className="button is-primary is-large">
+                <span className="icon">
+                  <i className="fab fa-github"></i>
                 </span>
                 <span>Github</span>
               </a>
@@ -57,187 +57,187 @@ class Cheatsheet extends Component {
         </div>
       </div>
     </section>
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-3">
-            <aside class="is-medium menu">
-          <p class="menu-label">
+    <section className="section">
+      <div className="container">
+        <div className="columns">
+          <div className="column is-3">
+            <aside className="is-medium menu">
+          <p className="menu-label">
             categories
           </p>
-          <ul class="menu-list">
-            <li class="is-right"><a href="#const" class="is-active"><i class="fab fa-css3-alt"></i> CSS</a></li>
-            <li><a href="#let" class="is-active"><i class="fab fa-js"></i> JS</a></li>
-            <li><a href="#let" class="is-active"><i class="fab fa-html5"></i> HTML</a></li>
+          <ul className="menu-list">
+            <li className="is-right"><a href="#const" className="is-active"><i className="fab fa-css3-alt" title='css'></i> CSS</a></li>
+            <li><a href="#let" className="is-active"><i className="fab fa-js" title='js'></i> JS</a></li>
+            <li><a href="#let" className="is-active"><i className="fab fa-html5" title='html'></i> HTML</a></li>
           </ul>
-              <p class="menu-label">
+              <p className="menu-label">
                 More to read...
               </p>
-              <ul class="menu-list">
-                <li><span class="tag is-white is-medium">{displayToolList}</span></li>
-                <li><span class="tag is-white is-medium">Ipsum</span></li>
-                <li><span class="tag is-white is-medium">Dolor</span></li>
-                <li><span class="tag is-white is-medium">Animi</span></li>
-                <li><span class="tag is-white is-medium">Eximi</span></li>
-                <li><span class="tag is-white is-medium">Nullius</span></li>
-                <li><span class="tag is-white is-medium">Oxipi</span></li>
-                <li><span class="tag is-white is-medium">Vultus</span></li>
-                <li><span class="tag is-white is-medium">Voluptatis</span></li>
-                <li><span class="tag is-white is-medium">Exomarphis</span></li>
-                <li><span class="tag is-white is-medium">Finimi</span></li>
-                <li><span class="tag is-white is-medium">Aenigma</span></li>
-                <li><span class="tag is-white is-medium">Arkham</span></li>
-                <li><span class="tag is-white is-medium">Blue</span></li>
-                <li><span class="tag is-white is-medium">Medium</span></li>
+              <ul className="menu-list">
+                <li><span className="tag is-white is-medium">{displayToolList}</span></li>
+                <li><span className="tag is-white is-medium">Ipsum</span></li>
+                <li><span className="tag is-white is-medium">Dolor</span></li>
+                <li><span className="tag is-white is-medium">Animi</span></li>
+                <li><span className="tag is-white is-medium">Eximi</span></li>
+                <li><span className="tag is-white is-medium">Nullius</span></li>
+                <li><span className="tag is-white is-medium">Oxipi</span></li>
+                <li><span className="tag is-white is-medium">Vultus</span></li>
+                <li><span className="tag is-white is-medium">Voluptatis</span></li>
+                <li><span className="tag is-white is-medium">Exomarphis</span></li>
+                <li><span className="tag is-white is-medium">Finimi</span></li>
+                <li><span className="tag is-white is-medium">Aenigma</span></li>
+                <li><span className="tag is-white is-medium">Arkham</span></li>
+                <li><span className="tag is-white is-medium">Blue</span></li>
+                <li><span className="tag is-white is-medium">Medium</span></li>
               </ul>
             </aside>
           </div>
-          <div class="column is-9">
-            <div class="content is-medium">
-          <h3 class="title is-3">Snippets ¯\_(ツ)_/¯</h3>
-              <div class="box">
-                <h4 id="const" class="title is-3">const</h4>
-                <article class="message is-primary">
-                  <span class="icon has-text-primary">
-                  <i class="fab fa-js"></i>
+          <div className="column is-9">
+            <div className="content is-medium">
+          <h3 className="title is-3">Snippets ¯\_(ツ)_/¯</h3>
+              <div className="box">
+                <h4 id="const" className="title is-3">const</h4>
+                <article className="message is-primary">
+                  <span className="icon has-text-primary">
+                  <i className="fab fa-js"></i>
                   </span>
-                  <div class="message-body">
+                  <div className="message-body">
                     Block-scoped. Cannot be re-assigned. Not immutable.
                   </div>
                 </article>
-              <pre><code class="language-javascript">const test = 'test';</code></pre>
+              <pre><code className="language-javascript">const test = 'test';</code></pre>
             </div>
-            <div class="box">
-              <h4 id="let" class="title is-3">let</h4>
-              <article class="message is-primary">
-                <span class="icon has-text-primary">
-                  <i class="fas fa-info-circle"></i>
+            <div className="box">
+              <h4 id="let" className="title is-3">let</h4>
+              <article className="message is-primary">
+                <span className="icon has-text-primary">
+                  <i className="fas fa-info-circle"></i>
                 </span>
-                <div class="message-body">
+                <div className="message-body">
                   Block-scoped. Can be re-assigned.
                 </div>
               </article>
-            <pre><code class="language-javascript">let i = 0;</code></pre>
+            <pre><code className="language-javascript">let i = 0;</code></pre>
           </div>
-          <h3 class="title is-3">More to Come...</h3>
-          <div class="box">
-            <h4 id="lorem" class="title is-4">More to come...</h4>
-            <article class="message is-primary">
-              <span class="icon has-text-primary">
-                <i class="fas fa-info-circle"></i>
+          <h3 className="title is-3">More to Come...</h3>
+          <div className="box">
+            <h4 id="lorem" className="title is-4">More to come...</h4>
+            <article className="message is-primary">
+              <span className="icon has-text-primary">
+                <i className="fas fa-info-circle"></i>
               </span>
-              <div class="message-body">
+              <div className="message-body">
                 Lorem ipsum dolor sit amet, mea ne viderer veritus menandri, id scaevola gloriatur instructior sit.
               </div>
             </article>
-          <pre><code class="language-javascript">let i = 0;</code></pre>
+          <pre><code className="language-javascript">let i = 0;</code></pre>
         </div>
       </div>
     </div>
   </div>
 </div>
 </section>
-<footer class="footer">
-<section class="section">
-  <div class="container">
-    <div class="columns is-multiline">
-      <div class="column is-one-third">
-        <article class="notification media has-background-white">
-          <figure class="media-left">
-            <span class="icon">
-              <i class="has-text-warning fas fa-columns fa-lg"></i>
+<footer className="footer">
+<section className="section">
+  <div className="container">
+    <div className="columns is-multiline">
+      <div className="column is-one-third">
+        <article className="notification media has-background-white">
+          <figure className="media-left">
+            <span className="icon">
+              <i className="has-text-warning fas fa-columns fa-lg"></i>
             </span>
           </figure>
-          <div class="media-content">
-            <div class="content">
-              <h1 class="title is-size-4">Columns</h1>
-              <p class="is-size-5 subtitle">
+          <div className="media-content">
+            <div className="content">
+              <h1 className="title is-size-4">Columns</h1>
+              <p className="is-size-5 subtitle">
                 The power of <strong>Flexbox</strong> in a simple interface
               </p>
             </div>
           </div>
         </article>
       </div>
-      <div class="column is-one-third">
-        <article class="notification has-background-white media">
-          <figure class="media-left">
-            <span class="icon has-text-info">
-              <i class="fab fa-lg fa-wpforms"></i>
+      <div className="column is-one-third">
+        <article className="notification has-background-white media">
+          <figure className="media-left">
+            <span className="icon has-text-info">
+              <i className="fab fa-lg fa-wpforms"></i>
             </span>
           </figure>
-          <div class="media-content">
-            <div class="content">
-              <h1 class="title is-size-4">Form</h1>
-              <p class="is-size-5 subtitle">
+          <div className="media-content">
+            <div className="content">
+              <h1 className="title is-size-4">Form</h1>
+              <p className="is-size-5 subtitle">
                 The indispensable <strong>form controls</strong>, designed for maximum clarity
               </p>
             </div>
           </div>
         </article>
       </div>
-      <div class="column is-one-third">
-        <article class="notification has-background-white media">
-          <figure class="media-left">
-            <span class="icon has-text-danger">
-              <i class="fas fa-lg fa-cubes"></i>
+      <div className="column is-one-third">
+        <article className="notification has-background-white media">
+          <figure className="media-left">
+            <span className="icon has-text-danger">
+              <i className="fas fa-lg fa-cubes"></i>
             </span>
           </figure>
-          <div class="media-content">
-            <div class="content">
-              <h1 class="title is-size-4">Components</h1>
-              <p class="is-size-5 subtitle">
+          <div className="media-content">
+            <div className="content">
+              <h1 className="title is-size-4">Components</h1>
+              <p className="is-size-5 subtitle">
                 Advanced multi-part components with lots of possibilities
               </p>
             </div>
           </div>
         </article>
       </div>
-      <div class="column is-one-third">
-        <article class="notification has-background-white media">
-          <figure class="media-left">
-            <span class="icon has-text-grey">
-              <i class="fas fa-lg fa-cogs"></i>
+      <div className="column is-one-third">
+        <article className="notification has-background-white media">
+          <figure className="media-left">
+            <span className="icon has-text-grey">
+              <i className="fas fa-lg fa-cogs"></i>
             </span>
           </figure>
-          <div class="media-content">
-            <div class="content">
-              <h1 class="title is-size-4">Modifiers</h1>
-              <p class="is-size-5 subtitle">
+          <div className="media-content">
+            <div className="content">
+              <h1 className="title is-size-4">Modifiers</h1>
+              <p className="is-size-5 subtitle">
                 An <strong>easy-to-read</strong> naming system designed for humans
               </p>
             </div>
           </div>
         </article>
       </div>
-      <div class="column is-one-third">
-        <article class="notification has-background-white media">
-          <figure class="media-left">
-            <span class="icon has-text-primary">
-              <i class="fas fa-lg fa-warehouse"></i>
+      <div className="column is-one-third">
+        <article className="notification has-background-white media">
+          <figure className="media-left">
+            <span className="icon has-text-primary">
+              <i className="fas fa-lg fa-warehouse"></i>
             </span>
           </figure>
-          <div class="media-content">
-            <div class="content">
-              <h1 class="title is-size-4">Layout</h1>
-              <p class="is-size-5 subtitle">
-                Design the <strong>structure</strong> of your webpage with these CSS classes
+          <div className="media-content">
+            <div className="content">
+              <h1 className="title is-size-4">Layout</h1>
+              <p className="is-size-5 subtitle">
+                Design the <strong>structure</strong> of your webpage with these CSS classNamees
               </p>
             </div>
           </div>
         </article>
       </div>
-      <div class="column is-one-third">
-        <article class="notification has-background-white media">
-          <figure class="media-left">
-            <span class="icon has-text-danger">
-              <i class="fas fa-lg fa-cube"></i>
+      <div className="column is-one-third">
+        <article className="notification has-background-white media">
+          <figure className="media-left">
+            <span className="icon has-text-danger">
+              <i className="fas fa-lg fa-cube"></i>
             </span>
           </figure>
-          <div class="media-content">
-            <div class="content">
-              <h1 class="title is-size-4">Elements</h1>
-              <p class="is-size-5 subtitle">
-                Essential interface elements that only require a <strong>single CSS class</strong>
+          <div className="media-content">
+            <div className="content">
+              <h1 className="title is-size-4">Elements</h1>
+              <p className="is-size-5 subtitle">
+                Essential interface elements that only require a <strong>single CSS className</strong>
               </p>
             </div>
           </div>
@@ -247,17 +247,17 @@ class Cheatsheet extends Component {
   </div>
 </section>
 <hr/>
-<div class="columns is-mobile is-centered">
-  <div class="field is-grouped is-grouped-multiline">
-    <div class="control">
-      <div class="tags has-addons"><a class="tag is-link" href="https://github.com/BulmaTemplates/bulma-templates">Bulma Templates</a>
-      <span class="tag is-info">MIT license</span>
+<div className="columns is-mobile is-centered">
+  <div className="field is-grouped is-grouped-multiline">
+    <div className="control">
+      <div className="tags has-addons"><a className="tag is-link" href="https://github.com/BulmaTemplates/bulma-templates">Bulma Templates</a>
+      <span className="tag is-info">MIT license</span>
     </div>
   </div>
-  <div class="control">
-    <div class="tags has-addons">
-      <span class="tag is-dark">based on a pen</span>
-      <span class="tag has-addons is-warning"><a href="https://codepen.io/melanieseltzer/pen/odOXWM"><i class="fab fa-lg fa-codepen"></i></a></span>
+  <div className="control">
+    <div className="tags has-addons">
+      <span className="tag is-dark">based on a pen</span>
+      <span className="tag has-addons is-warning"><a href="https://codepen.io/melanieseltzer/pen/odOXWM"><i className="fab fa-lg fa-codepen"></i></a></span>
     </div>
   </div>
 </div>
